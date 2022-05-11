@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../assets/monito-mini.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/monito-mini.png" type="image/x-icon" />
+
+    <title>Monitoring Siswa</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="profil.css">
+    
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Monitoring Siswa</h3>
+                <strong><i class="fas fa-home"></i></i></strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="../dashboard/home.html" >
+                        <i class="	fas fa-chart-pie"></i>
+                        Dasbor
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="../Penugasan/penugasan.html">
+                        <i class="fas fa-tasks"></i>
+                        Tugas
+                    </a>
+                    <a href="../Absensi/april.html" >
+                        <i class="fas fa-copy"></i>
+                        Absensi
+                    </a>
+                    
+                </li>
+                <li class="active">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="	fas fa-users"></i>
+                        Kelas
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="../Kelas/kelas.html#sr">Seni Rupa</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tki">Teknik Komputer</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tm">Teknik Mesin</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/auth-login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Keluar
+                    </a>
+                </li>
+               
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download" id="gelap" ><img src="moon.png" class="bulan"> Dark Mode </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            
+                <div class="container-fluid">
+                    
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Tampilan Menu</span>
+                        
+                    </button>
+                    <div class="col-12 col-md-12  col-lg-12 order-md-1 order-last">
+                        
+                    </div>
+                    <div id="main">
+                        
+                        </div>
+                        </div>
+                            
+
+                    
+            <div class="page-content">
+                
+                
+                    <h4 class="pb-4 bawah">Pengaturan Profil</h4>
+                    <div class="d-flex align-items-start py-3 propil"> <img src="../gambar/bayy.jpg" class="img" alt="">
+                        <div class="pl-sm-4 pl-2 propils" id="img-section"> <b>Foto Profil</b>
+                            <p>Jenis file yang diterima kurang dari 3mb</p> <button class="btn button"><b>Upload</b></button>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <div class="row py-2">
+                            <div class="col-md-12"> <label for="firstname">Nama Lengkap</label> <input type="text" class="bg-light form-control" value="Bayu Putra Pamungkas"> </div>
+                            <div class="col-md-6 pt-md-0 pt-3">  </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-md-6"> <label for="email">Nama Panggilan</label> <input type="text" class="bg-light form-control" value="Bayu"> </div>
+                            <div class="col-md-6 pt-md-0 pt-3"> <label for="phone">Nomer Telepon</label> <input type="tel" class="bg-light form-control" value="+64 812-1062-1639"> </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-md-6"> <label for="email">Alamat Email</label> <input type="text" class="bg-light form-control" value="bayu000111222@gmail.com">
+                                </select> </div>
+                            <div class="col-md-6 pt-md-0 pt-3" id="lang"> <label for="language">Bahasa</label>
+                                <div class="arrow"> <select name="language" id="language" class="bg-light form-control ">
+                                        <option value="indonesia" selected>Indonesia</option>
+                                        <option value="english">English</option>
+                                    </select> </div>
+                            </div>
+                        </div>
+                        <div class="py-3 pb-4 bawah"> <button class="btn btn-info mr-3" id="success"><b>Save Changes</b></button> <button class="btn aktif button"><b>Batal</b></button> </div>
+                        
+                    </div>
+                
+
+                <footer>
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                            <p>2021 <span class=text-danger>&copy;</span> by Bayu Putra</p>
+                        </div>
+                        
+                    </div>
+                </footer>
+            </div>
+    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="home.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $('#success').click(function(){
+            swal({
+                title:"Konfirmasi",
+                text:"Apakah anda yakin?",
+                buttons: {
+                    cancel: true,
+                    confirm: "Submit"
+                }
+            }).then( val => {
+                    if(val) {
+                        swal({
+                                title: "Tersimpan",
+                                text: "Data Berhasil Disimpan",
+                                icon: "success"
+                        });
+                    }
+            }
+            
+            );
+        });
+    </script>
+    <script>
+        var icon = document.getElementById("gelap");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "sun.png";
+            }else{
+                icon.src = "moon.png";
+            }
+        }
+    </script>
+    
+    
+</body>
+
+</html>
