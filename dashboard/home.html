@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../assets/monito-mini.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/monito-mini.png" type="image/x-icon" />
+
+    <title>Monitoring Siswa</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="home.css">
+    
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Monitoring Siswa</h3>
+                <strong><i class="fas fa-home"></i></i></strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" >
+                        <i class="	fas fa-chart-pie"></i>
+                        Dasbor
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="../Penugasan/penugasan.html">
+                        <i class="fas fa-tasks"></i>
+                        Tugas
+                    </a>
+                    <a href="../Absensi/april.html" >
+                        <i class="fas fa-copy"></i>
+                        Absensi
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="	fas fa-users"></i>
+                        Kelas
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="../Kelas/kelas.html#sr">Seni Rupa</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tki">Teknik Komputer</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tm">Teknik Mesin</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../profil/profil.html">
+                        <i class="fa fa-user"></i>
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/auth-login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Keluar
+                    </a>
+                </li>
+               
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a class="download" id="gelap"><img src="images/moon.png" class="bulan"> Dark Mode </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            
+                <div class="container-fluid">
+                    
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Tampilan Menu</span>
+                    </button>
+                    <div id="main">
+                        
+                        </div>
+                        </div>
+                            
+
+                    
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-3">
+                        <a href="../profil/profil.html">
+                        <div class="card">
+                            <div class="profils card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar avatar-xl">
+                                        <img src="../gambar/bayy.jpg" alt="Face 1">
+                                    </div>
+                                    <div class="ms-3 name">
+                                        <h5 class="font-bold">Bayu Putra Pamungkas</h5>
+                                        <h6 class="text-muted mb-0">PJOK</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Tugas Terbaru</h4>
+                            </div>
+                            <div class="card-content pb-4">
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="../gambar/fikki.jpg">
+                                    </div>
+                                    <div class="name ms-3">
+                                        <h5 class="container-fluid">Fikki</h5>
+                                        <h6 class="text-muted mb-0">AM 1</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="../gambar/raihan.jpg">
+                                    </div>
+                                    <div class="name ms-3">
+                                        <h5 class="container-fluid">Raihan</h5>
+                                        <h6 class="text-muted mb-0">TP 2</h6>
+                                    </div>
+                                </div>
+                                <div class="recent-message d-flex px-4 py-3">
+                                    <div class="avatar avatar-lg">
+                                        <img src="../gambar/bintang.jpg">
+                                    </div>
+                                    <div class="name ms-3">
+                                        <h5 class="container-fluid">Bintang</h5>
+                                        <h6 class="text-muted mb-0">AM 1</h6>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <a href="../Penugasan/penugasan.html"><button class='btn btn-block btn-xl font-bold mt-3 lihat'>
+                                        Lihat</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 >Persentasi Tugas</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="chart-visitors-profile"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-6 col-lg-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon purple">
+                                                    <i class="fas fa-clock"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Kehadiran terbaru</h6>
+                                                <h6 class="font-extrabold mb-0">196</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon purple">
+                                                    <i class="fas fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Sudah penugasan</h6>
+                                                <h6 class="font-extrabold mb-0">3,481</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-md-6">
+                                <div class="card text-center">
+                                    <div class="card-body px-3 py-4-5">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon purple">
+                                                    <i class="fas fa-chart-bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="text-muted font-semibold">Persentasi hadir</h6>
+                                                <h6 class="font-extrabold mb-0"><div class="progress progress-info">
+                                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 89%"
+                                                        >89%</div>
+                                                </div></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12">
+                                <div class="table-responsive table-hover table-borderless container-fluid card">
+                                    <div class="card-header">
+                                        <h4>Pengumpulan terbaru</h4>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table">
+                                            <caption class="container-fluid text-primary font-bold"><a href="../Kelas/mm-1.html">Lainnya</a></caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Nama</th>
+                                                        <th scope="col">Kelas</th>
+                                                        <th scope="col">Waktu</th>
+                                                        <th scope="col">Tugas</th>
+                                                    </tr>
+                                                </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">Fikki Pujiansyah</td>
+                                                    <td>AM 1</td>
+                                                    <td>11.53AM</td>
+                                                    <td class="btn btn-info download1"><i class="fa fa-download"></i> Download</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">Raihan Nulhakim</td>
+                                                    <td>TP 2</td>
+                                                    <td>13.13PM</td>
+                                                    <td class="btn btn-info download1"><i class="fa fa-download"></i> Download</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">Bintang Dwi Purnomo</td>
+                                                    <td>AM 1</td>
+                                                    <td>15.02PM</td>
+                                                    <td class="btn btn-info download1"><i class="fa fa-download"></i> Download</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Persentasi Kehadiran</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chart-profile-visit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Absen Terbaru</h4>
+                                </div>
+                                <div class="card-content pb-4">
+                                    <div class="recent-message d-flex px-4 py-3">
+                                        <div class="avatar avatar-lg">
+                                            <img src="../gambar/arial.jpg">
+                                        </div>
+                                        <div class="name ms-3">
+                                            <h5 class="container-fluid">Arial</h5>
+                                            <h6 class="text-muted mb-0">AM 1</h6>
+                                        </div>
+                                    </div>
+                                    <div class="recent-message d-flex px-4 py-3">
+                                        <div class="avatar avatar-lg">
+                                            <img src="../gambar/blank.jpg">
+                                        </div>
+                                        <div class="name ms-3">
+                                            <h5 class="container-fluid">Dzaki</h5>
+                                            <h6 class="text-muted mb-0">TKJ 2</h6>
+                                        </div>
+                                    </div>
+                                    <div class="recent-message d-flex px-4 py-3">
+                                        <div class="avatar avatar-lg">
+                                            <img src="../gambar/wika.jpg">
+                                        </div>
+                                        <div class="name ms-3">
+                                            <h5 class="container-fluid">Wika</h5>
+                                            <h6 class="text-muted mb-0">TPL 2</h6>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <a href="../Absensi/april.html"><button class='btn btn-block btn-xl lihat font-bold mt-3'>
+                                            Lihat</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                        
+                    
+            </div>
+                        
+            
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 <span class=text-danger>&copy;</span> by Bayu Putra</p>
+                    </div>
+                    
+                </div>
+            </footer>
+        
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="home.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        var icon = document.getElementById("gelap");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
