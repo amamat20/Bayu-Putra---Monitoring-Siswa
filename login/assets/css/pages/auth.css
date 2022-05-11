@@ -1,0 +1,51 @@
+body{
+    background-color:#fff;
+}
+#auth{
+    height:100vh;
+    overflow-x:hidden;
+}
+#auth h1{
+    color: #4d0c31;
+}
+#auth button:hover {
+    background-color: #4d0c31;
+    border: none;
+}
+#auth a:hover {
+    color: #9e1d66;
+}
+#auth button:focus {
+    background-color: #9e1d66;
+    border: none;
+}
+
+#auth #auth-right{
+    height:100%;background:url(../../images/bg/4853433.jpg),linear-gradient(90deg,#5c0b39,#680c40);
+}
+#auth #auth-right img{
+    margin-top: 2rem;
+}
+#auth #auth-left{
+    padding:5rem 8rem
+}
+#auth #auth-left .auth-title{
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+#auth #auth-left .auth-subtitle{
+    font-size:1.7rem;
+    line-height:2.5rem;
+    color:#a8aebb
+}
+#auth #auth-left .auth-logo{
+    margin-bottom:7rem
+}
+#auth #auth-left .auth-logo img{
+    height:2rem
+}
+    @media screen and (max-width:767px){
+        #auth #auth-left{
+            padding:5rem
+        }
+    }
