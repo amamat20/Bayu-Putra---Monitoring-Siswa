@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../assets/monito-mini.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/monito-mini.png" type="image/x-icon" />
+
+    <title>Monitoring Siswa</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="kelas.css">
+    <link rel="stylesheet" href="mm.css">    
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Monitoring Siswa</h3>
+                <strong><i class="fas fa-home"></i></i></strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="../dashboard/home.html" >
+                        <i class="	fas fa-chart-pie"></i>
+                        Dasbor
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="../Penugasan/penugasan.html">
+                        <i class="fas fa-tasks"></i>
+                        Tugas
+                    </a>
+                    </li>
+                    <li>
+                    <a href="../Absensi/april.html" >
+                        <i class="fas fa-copy"></i>
+                        Absensi
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="	fas fa-users"></i>
+                        Kelas
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="../Kelas/kelas.html#sr">Seni Rupa</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tki">Teknik Komputer</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tm">Teknik Mesin</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../profil/profil.html">
+                        <i class="fa fa-user"></i>
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/auth-login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Keluar
+                    </a>
+                </li>
+               
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download" id="gelap" ><img src="../assets/moon.png" class="bulan"> Dark Mode </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            
+                <div class="container-fluid">
+                    
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Tampilan Menu</span>
+                        
+                    </button>
+                    <div class="col-12 col-md-12  col-lg-12 order-md-1 order-last">
+                        <h1 class="text-center font-weight-bold">Semua Kelas</h1>
+                    </div>
+                    <div id="main">
+                        
+                        </div>
+                        </div>
+                            
+
+                    
+            <div class="page-content">
+                <div class="page-heading">
+                    <div class="page-title">
+                        <div class="row">
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <section id="content-types">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 container-fluid">
+                        <table  id="example" class="center display table-hover" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Absen</th>
+                                    <th>Nama</th>
+                                    <th>Kelas</th>
+                                    <th>Tugas ke-1</th>
+                                    <th>Tugas ke-2</th>
+                                    <th>Tugas ke-3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-success">
+                                    <td>04</td>
+                                    <td>Bayu Putra Pamungkas</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>01</td>
+                                    <td>Adam Sulton Auliya</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>02</td>
+                                    <td>Ariza Mu'ammar L</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>03</td>
+                                    <td>Angel Glasia Aurelliane</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>05</td>
+                                    <td>Dendy Maulana Yusuf</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>06</td>
+                                    <td>Diaz Ardiansyah</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>07</td>
+                                    <td>Diaz Dwi Putrawan</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>08</td>
+                                    <td>Dziki Moses Robinsar</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>09</td>
+                                    <td>Fachri Al Fathir</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>10</td>
+                                    <td>Fauzan Rizky Ramadhan</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>11</td>
+                                    <td>Fazril Suryanda</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>12</td>
+                                    <td>Gintara Saputra</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>13</td>
+                                    <td>Imran Abdurrahman Shiddiq</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>14</td>
+                                    <td>Irfan Hasan Sulaiman</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>15</td>
+                                    <td>Karen Anggelia Pasaribu</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>16</td>
+                                    <td>Kevin Praditya</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17</td>
+                                    <td>Kiky Maulana</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>18</td>
+                                    <td>Luqman Almughni</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>19</td>
+                                    <td>Mochamad Arfi Novama</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>20</td>
+                                    <td>Muhammad Nafish Ginanjar</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>21</td>
+                                    <td>Muhammad Ridwan Ardiansyah</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>22</td>
+                                    <td>Muhammad Siamfikri</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>23</td>
+                                    <td>Muhammad Taufik Ramadhan</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>24</td>
+                                    <td>Mutia Mustika Puspita</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>25</td>
+                                    <td>Nisrina Santia</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>26</td>
+                                    <td>Raden Nazwa Ayu Ramdany</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>27</td>
+                                    <td>Rafi Muhammad Najmuddin</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>28</td>
+                                    <td>Ragil Rafael Santoso</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>29</td>
+                                    <td>Ramadhani Putra Pratama</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>30</td>
+                                    <td>Reno Hendri Prastyo</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>31</td>
+                                    <td>Reva Kamila Khairunisa</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>32</td>
+                                    <td>Revan Fajar Kustiawan</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>33</td>
+                                    <td>Rezza Firmansyah</td>
+                                    <td>RPL 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>34</td>
+                                    <td>Rian Fadillah</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>35</td>
+                                    <td>Syarif Arifuddin</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>36</td>
+                                    <td>Tiara Rohima</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>37</td>
+                                    <td>Tria Santana Putra</td>
+                                    <td>RPL 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>01</td>
+                                    <td>Aidil Maulana</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>02</td>
+                                    <td>Aldyan Mahesa Putra</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>03</td>
+                                    <td>Arya Fachmi Pratama</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>04</td>
+                                    <td>Daffa Putra Pratama</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>05</td>
+                                    <td>Daniel Satresna Sukandar</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>06</td>
+                                    <td>Didi Kumar</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>07</td>
+                                    <td>Dimas Jordan Permana</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>08</td>
+                                    <td>Dinda Risna Riyana</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>09</td>
+                                    <td>Farrel Akira Rashad</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>10</td>
+                                    <td>Fauzan Raishiva Fausta</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>11</td>
+                                    <td>Firdan Umar Arisyawal</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>12</td>
+                                    <td>Ghana Wijaya</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>13</td>
+                                    <td>Husni Januarsyah</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>14</td>
+                                    <td>Kimpika Raudoh .A</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>15</td>
+                                    <td>Maura Aulia Putri</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>16</td>
+                                    <td>Mochammad Rheza Firmansyah</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>17</td>
+                                    <td>Mugia Febriana Salwa</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>18</td>
+                                    <td>Muhammad Ghalib</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>19</td>
+                                    <td>Muhammad Hafizh Panatagama</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>20</td>
+                                    <td>Muhammad Faisal Nur Alif</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>21</td>
+                                    <td>Muhammad Nazriel Ihsan</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>22</td>
+                                    <td>Muhammad Rahman</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>23</td>
+                                    <td>Muhammad Ra'uf Abdul Mughnly</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>24</td>
+                                    <td>Putri Uliwatunjanah</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>25</td>
+                                    <td>Raden Ajriya Razaka Nugroho</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>26</td>
+                                    <td>Rafli Nazril Setiadi</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>27</td>
+                                    <td>Rafly Muhammad Rahman</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>28</td>
+                                    <td>Ragil Apriyadi</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>29</td>
+                                    <td>Rifaldi Jaenusalam</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>30</td>
+                                    <td>Rio Agasta</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>31</td>
+                                    <td>Rossi Ramadhan Tyanto</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>32</td>
+                                    <td>Ryan Aqeel Shah</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>33</td>
+                                    <td>Saphira Evani</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>34</td>
+                                    <td>Senzie Apparel Appaarel Gunoya</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>35</td>
+                                    <td>Vinsesius Boido Simarmata</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>36</td>
+                                    <td>Wildan Fauzan</td>
+                                    <td>RPL 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>37</td>
+                                    <td>Zeekhan Vianca</td>
+                                    <td>RPL 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>01</td>
+                                    <td>Aditia Agung Purwadi</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>02</td>
+                                    <td>Ahmad Nazrah Syahputra</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>03</td>
+                                    <td>Alfani Putri Andini</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>04</td>
+                                    <td>Alfina Damayuni</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>05</td>
+                                    <td>Andi Sahrio</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>06</td>
+                                    <td>Andika Nur Anugrah</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>07</td>
+                                    <td>Arial Rizky Paulary</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>08</td>
+                                    <td>Bintang Fauzan Firdaus</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>09</td>
+                                    <td>Daffa Ajun Pratama</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>10</td>
+                                    <td>Daffa Hayaa A</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>11</td>
+                                    <td>Deny Setya Nugraha</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>12</td>
+                                    <td>Elbi Seqa'dah</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>13</td>
+                                    <td>FikrI Fahriez Sulaiman</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>14</td>
+                                    <td>Fitri Hanifah</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>15</td>
+                                    <td>Helfi July Lestary</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>16</td>
+                                    <td>Indah Insani</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>17</td>
+                                    <td>Kenji Alif Davian</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>18</td>
+                                    <td>Mochamad Alby</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>19</td>
+                                    <td>Mochammad Ichram Putra Pebrian</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>20</td>
+                                    <td>Muhammad Raya Sabda Rabbani</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>21</td>
+                                    <td>Muhammad Rizki Fauzan</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>22</td>
+                                    <td>Muhammad Sulthonun Diba</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>23</td>
+                                    <td>Muhammad Syamil F.R</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>24</td>
+                                    <td>Muhammad Zain Kamil S</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>25</td>
+                                    <td>Noval Syahbana Setiawan</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>26</td>
+                                    <td>Rangga Adhika Pramudita</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>27</td>
+                                    <td>Rifki Rifaldi</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>28</td>
+                                    <td>Risma Nur Afifah</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>29</td>
+                                    <td>Salwa Nur Ainun Putri</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>30</td>
+                                    <td>Shakila Karimah</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>31</td>
+                                    <td>Siti Latifah Ananda Rusmana</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>32</td>
+                                    <td>Sonya Maya Indria</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>33</td>
+                                    <td>Wanda Yuliana</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>34</td>
+                                    <td>Wildan Yuliana</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>35</td>
+                                    <td>Zahra Salsabila Putri</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>36</td>
+                                    <td>Zhafran Dafy</td>
+                                    <td>MM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>37</td>
+                                    <td>Zidan Fajar Padhularrahman</td>
+                                    <td>MM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>01</td>
+                                    <td>Abyan Cikal Nugraha</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>02</td>
+                                    <td>Adinda Amelia Firdaus</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>03</td>
+                                    <td>Ahadin Febriansyah</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>04</td>
+                                    <td>Alyssa Talitha Ramaniya Shalsabila Nugraha</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>05</td>
+                                    <td>Arttyliant Hasna</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>06</td>
+                                    <td>Azril Defan Sakhi</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>07</td>
+                                    <td>Bery Pratama</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>08</td>
+                                    <td>Devika Yaqutah Zahran</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>09</td>
+                                    <td>Dewi Hanifah</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>10</td>
+                                    <td>Dinan Hafizhan</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>11</td>
+                                    <td>Dini Maira Azizah</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>12</td>
+                                    <td>Falisha</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>13</td>
+                                    <td>Farrel Mirza Delvano</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>14</td>
+                                    <td>Julian Harith Al Banny Hudaya</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>15</td>
+                                    <td>Kaela Fitria Genius</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>16</td>
+                                    <td>M. Nabiel Rafiandi</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>17</td>
+                                    <td>Mayla Putri Azzahra</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>18</td>
+                                    <td>Mohammad Evan Al Rasyid</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>19</td>
+                                    <td>Muhammad Bilal</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>20</td>
+                                    <td>Muhammad Pasya Hermansyah</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>21</td>
+                                    <td>Muhammad Rizki Ahsan</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>22</td>
+                                    <td>Muhammad Zaidan Adli</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>23</td>
+                                    <td>Nadhifah Hasna Humaira</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>24</td>
+                                    <td>Najma 'Afifah Nurfadhilah</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>25</td>
+                                    <td>Nazla Maisya Nabilah</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>26</td>
+                                    <td>Rafi Dzaki Azhari</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>27</td>
+                                    <td>Raissa Muhammad Azzahra</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>28</td>
+                                    <td>Ratu Meitha Rifiola Hidayat</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>29</td>
+                                    <td>Reva Putri Tsania Seagate</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>30</td>
+                                    <td>Shifa Elena Permadi</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>31</td>
+                                    <td>Syifa Adinda Salsabila</td>
+                                    <td>AM 2</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>32</td>
+                                    <td>Taufani Ramadhanty Khairani</td>
+                                    <td>AM 2</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>01</td>
+                                    <td>Aditya Muhamad Yusup</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>02</td>
+                                    <td>Ahya Adilia Fauzan</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>03</td>
+                                    <td>Alfian Dimas Julianda</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>04</td>
+                                    <td>Alisya Amelia Putri</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>05</td>
+                                    <td>Andika Tri Mulyadi</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>06</td>
+                                    <td>Arif Febrianto</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>07</td>
+                                    <td>Citra Widy Nuranjani</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>08</td>
+                                    <td>Dimas Purwanto</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>09</td>
+                                    <td>Fikri Trino H</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>10</td>
+                                    <td>Fitrah Ramdani</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>11</td>
+                                    <td>Haifa Maulana Malik S</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>12</td>
+                                    <td>Januar Arfan</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>13</td>
+                                    <td>Khorrul Fikri</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>14</td>
+                                    <td>M.Azhar Tegar Dwinaya</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>15</td>
+                                    <td>Muhammad Naufal Sayyidan Ernadi</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>16</td>
+                                    <td>Muhammad Bur Abyan</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>17</td>
+                                    <td>Muhammad Bur Abyaz</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>18</td>
+                                    <td>Nashar Abdul Manan</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>19</td>
+                                    <td>Nurman Saptaji Suryandaru</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>20</td>
+                                    <td>Pauji Sanbani</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>21</td>
+                                    <td>Putra Wibisana</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>22</td>
+                                    <td>Raihan Putra Pratama</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>23</td>
+                                    <td>Raihan Rahandi</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>24</td>
+                                    <td>Reinard Othman</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>25</td>
+                                    <td>Renal De Paladin</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>26</td>
+                                    <td>Sabian Eka Pratama</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>27</td>
+                                    <td>Satria Purnama Abdillah</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>28</td>
+                                    <td>Sultan Tommy Ibrahim</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>29</td>
+                                    <td>Syahrul Ibad Setiawan</td>
+                                    <td>TPGM 1</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>30</td>
+                                    <td>Yuda Wiguna</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>07</td>
+                                    <td>Atilla Azi Satria</td>
+                                    <td>TPGM 1</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>01</td>
+                                    <td>Aisyah Azzahra</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>02</td>
+                                    <td>Ali Muhammad Noval</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>03</td>
+                                    <td>Alia Nurhaliza Hadari</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>04</td>
+                                    <td>Alliya Rahma Heriadi</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>05</td>
+                                    <td>Anastasya Awanie</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>06</td>
+                                    <td>Arviolga Cartenz Hermani</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>07</td>
+                                    <td>Aulia Marsalina</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>08</td>
+                                    <td>Azzahra Larasti Fajar</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>09</td>
+                                    <td>Daffa Andika Arya Putra</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>10</td>
+                                    <td>Delfio Darel Hadia</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>11</td>
+                                    <td>Fakhrul Mulki Nursyahid</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>12</td>
+                                    <td>Faudra Riksya Nursyahid</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>13</td>
+                                    <td>Fito Hadiantama Trisnanto</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>14</td>
+                                    <td>Gesya Nur Sabrina</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>15</td>
+                                    <td>Gheanina Sarah Nindya Putri</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>16</td>
+                                    <td>Hafizh Muchtar Achmadi</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>17</td>
+                                    <td>Kalyca Tiara Jasmine</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>18</td>
+                                    <td>Kayfa Putri Aisyadina</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>19</td>
+                                    <td>Lintang Maheswari Nirwasita</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>20</td>
+                                    <td>M. Ikhsan Ansari</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>21</td>
+                                    <td>Medina Prenadinna Nikma Pradana</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>22</td>
+                                    <td>Meiska Zhallianty</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>23</td>
+                                    <td>Muhammad Fajar Rizqi Nafandra</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>24</td>
+                                    <td>Nabila Anggun Herdilanggiva</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>25</td>
+                                    <td>Nadhira Khairunnisa</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>26</td>
+                                    <td>Najim Khoiril Abidin</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>27</td>
+                                    <td>Nasyiwa Thilal Salsabila Siagian</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>28</td>
+                                    <td>Nasywa Aurelia Putri Sidik</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>29</td>
+                                    <td>Nayla Zahira</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>30</td>
+                                    <td>Qinanda Raffaatiyya</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>31</td>
+                                    <td>Raditya Nalendra Wisesha</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>32</td>
+                                    <td>Rafi Abdullah</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>33</td>
+                                    <td>Reva Ariffan Aryaputera</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>34</td>
+                                    <td>Riyan Wahyu Nurdiansa</td>
+                                    <td>TPL 4</td>
+                                    <td> </td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>35</td>
+                                    <td>Saskia Syafinda Fyndiani</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td> </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>36</td>
+                                    <td>Talitha Nathania Jonathan</td>
+                                    <td>TPL 4</td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                    <td class="tengah"><span class="text-primary font-bold">V</span></td>
+                                </tr>
+                                
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Absen</th>
+                                    <th>Nama</th>
+                                    <th>Kelas</th>
+                                    <th>Tugas ke-1</th>
+                                    <th>Tugas ke-2</th>
+                                    <th>Tugas ke-3</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                        
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                            <p>2021 <span class=text-danger>&copy;</span> by Bayu Putra</p>
+                        </div>
+                        
+                    </div>
+                </footer>
+            </div>
+    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="home.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#example').DataTable();
+} );
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    
+    
+</body>
+
+</html>

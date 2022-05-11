@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../assets/monito-mini.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/monito-mini.png" type="image/x-icon" />
+
+    <title>Monitoring Siswa</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="kelas.css">
+    
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Monitoring Siswa</h3>
+                    <strong><i class="fas fa-home"></i></i></strong>
+                </div>
+    
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="../dashboard/home.html" >
+                            <i class="	fas fa-chart-pie"></i>
+                            Dasbor
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="../Penugasan/penugasan.html">
+                            <i class="fas fa-tasks"></i>
+                            Tugas
+                        </a>
+                        </li>
+                        <li>
+                        <a href="../Absensi/april.html" >
+                            <i class="fas fa-copy"></i>
+                            Absensi
+                        </a>
+                        
+                    </li>
+                    <li class="active">
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="	fas fa-users"></i>
+                            Kelas
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="../Kelas/kelas.html#sr">Seni Rupa</a>
+                            </li>
+                            <li>
+                                <a href="../Kelas/kelas.html#tki">Teknik Komputer</a>
+                            </li>
+                            <li>
+                                <a href="../Kelas/kelas.html#tm">Teknik Mesin</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../profil/profil.html">
+                            <i class="fa fa-user"></i>
+                            Profil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../login/auth-login.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Keluar
+                        </a>
+                    </li>
+                   
+                </ul>
+    
+                <ul class="list-unstyled CTAs">
+                    <li>
+                        <a href="#" class="download" id="gelap" ><img src="../assets/moon.png" class="bulan"> Dark Mode </a>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            
+                <div class="container-fluid">
+                    
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Tampilan Menu</span>
+                        
+                    </button>
+                    <div class="col-12 col-md-12  col-lg-12 order-md-1 order-last">
+                        <h1 class="text-center font-weight-bold">Kelas</h1>
+                    </div>
+                    <div id="main">
+                        
+                        </div>
+                        </div>
+                            
+
+                    
+            <div class="page-content">
+                <div class="page-heading">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-md-1 order-last">
+                                <h3 id="sr">Seni Rupa</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <section id="content-types">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="animasi card-content">
+                                    <img src="assets/animasi.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI AM 1</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI AM 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI AM 1'"><i class='fas fa-address-book'></span></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="animasi card-content">
+                                    <img src="assets/animasi.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI AM 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI AM 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI AM 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <div class="page-heading">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-md-1 order-last">
+                                <h3 id="tki">Teknik Komputer</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <section id="content-types">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="RPL card-content">
+                                    <img src="assets/RPL.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI RPL 1</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                 
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI RPL 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI RPL 1'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="RPL card-content">
+                                    <img src="assets/RPL.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI RPL 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI RPL 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI RPL 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card multimedia">
+                                <div class="card-content">
+                                    <img src="assets/MM.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI MM 1</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI MM 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI MM 1'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card multimedia">
+                                <div class="card-content">
+                                    <img src="assets/MM.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI MM 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI MM 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI MM 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TKJ card-content">
+                                    <img src="assets/TKJ.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TKJ 1</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TKJ 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TKJ 1'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TKJ card-content">
+                                    <img src="assets/TKJ.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TKJ 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TKJ 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TKJ 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <div class="page-heading">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-md-1 order-last">
+                                <h3 id="tm">Teknik Mesin</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <section id="content-types">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TP card-content">
+                                    <img src="assets/TP.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TP 1</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TP 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TP 1'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TP card-content">
+                                    <img src="assets/TP.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TP 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TP 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TP 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="card-content">
+                                    <img src="assets/TP.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TP 3</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TP 3' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TP 3'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="card-content">
+                                    <img src="assets/TP.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TP 4</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TP 4' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TP 4'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TP card-content">
+                                    <img src="assets/TP.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TP 5</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TP 5' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TP 5'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TP card-content">
+                                    <img src="assets/TP.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TP 6</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TP 6' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TP 6'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TPL card-content">
+                                    <img src="assets/TPL.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPL 1</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPL 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPL 1'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TPL card-content">
+                                    <img src="assets/TPL.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPL 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPL 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPL 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card TPL">
+                                <div class="card-content">
+                                    <img src="assets/TPL.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPL 3</h4>
+                                        <p class="card-text">
+                                            36 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPL 3' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPL 3'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card TPL">
+                                <div class="card-content">
+                                    <img src="assets/TPL.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPL 4</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPL 4' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPL 4'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TPGM card-content">
+                                    <img src="assets/TPGM.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPGM 1</h4>
+                                        <p class="card-text">
+                                            32 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPGM 1' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPGM 1'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TPGM card-content">
+                                    <img src="assets/TPGM.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPGM 2</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPGM 2' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPGM 2'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-12">
+                            <div class="kotak">
+                            <div class="card">
+                                <div class="TPGM card-content">
+                                    <img src="assets/TPGM.jpg" class="card-img-top img-fluid"
+                                        alt="singleminded">
+                                    <a href="#">
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">XI TPGM 3</h4>
+                                        <p class="card-text">
+                                            37 Siswa
+                                        </p>                                     
+                                    </div>
+                                </a>                                  
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item spasi"> </li>
+                                    <li class="list-group-item ikon"><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka folder untuk kelas 'XI TPGM 3' Google Drive"><i class='fas fa-folder'></i></span><span  data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Buka buku nilai untuk 'XI TPGM 3'"><i class='fas fa-address-book'></i></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="footer clearfix mb-0 text-muted">
+                        <div class="float-start">
+                            <p>2021 <span class=text-danger>&copy;</span> by Bayu Putra</p>
+                        </div>
+                        
+                    </div>
+                </footer>
+            </div>
+    
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="home.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        var icon = document.getElementById("gelap");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+    </script>
+    
+    
+</body>
+
+</html>
