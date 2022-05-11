@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/monito-mini.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/monito-mini.png" type="image/x-icon" />
+
+    <title>Monitoring Siswa</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="CSS/selengkapnya.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Monitoring Siswa</h3>
+                <strong><i class="fas fa-home"></i></i></strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#" >
+                        <i class="	fas fa-chart-pie"></i>
+                        Dasbor
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="../Penugasan/penugasan.html">
+                        <i class="fas fa-tasks"></i>
+                        Tugas
+                    </a>
+                    </li>
+                    <li class="active">
+                    <a href="april.html" >
+                        <i class="fas fa-copy"></i>
+                        Absensi
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="	fas fa-users"></i>
+                        Kelas
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="../Kelas/kelas.html#sr">Seni Rupa</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tki">Teknik Komputer</a>
+                        </li>
+                        <li>
+                            <a href="../Kelas/kelas.html#tm">Teknik Mesin</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../profil/profil.html">
+                        <i class="fa fa-user"></i>
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a href="../login/auth-login.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Keluar
+                    </a>
+                </li>
+               
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download" id="gelap" ><img src="../assets/moon.png" class="bulan"> Dark Mode </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+                        <span>Tampilan Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">                               
+                                <a class="nav-link" href="#2025">2025</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#2024">2024</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#2023">2023</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#2022">2022</a>
+                            </li>                           
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="tahun text-center" id="2022">2022</h1>
+            <div class="cardBox">
+                
+                <div class="card">
+                    <a href="januari.html">
+                    <div>
+                        <div class="numbers">Jan</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">4,720</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="februari.html">
+                    <div>
+                        <div class="numbers">Feb</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">4,703</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="maret.html">
+                    <div>
+                        <div class="numbers">Mar</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">4,689</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="april.html">
+                    <div>
+                        <div class="numbers">Apr</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">1,504</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="mei.html">
+                    <div>
+                        <div class="numbers">Mei</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juni.html">
+                    <div>
+                        <div class="numbers">Jun</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juli.html">
+                    <div>
+                        <div class="numbers">Jul</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="agustus.html">
+                    <div>
+                        <div class="numbers">Ags</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="september.html">
+                    <div>
+                        <div class="numbers">Sep</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="oktober.html">
+                    <div>
+                        <div class="numbers">Okt</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="november.html">
+                    <div>
+                        <div class="numbers">Nov</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card" id="desember">
+                    <a href="desember.html">
+                    <div>
+                        <div class="numbers">Des</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <h1 class="tahun text-center" id="2023">2023</h1>
+            <div class="cardBox">
+                
+                <div class="card">
+                    <a href="januari-none.html">
+                    <div>
+                        <div class="numbers">Jan</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="februari-none.html">
+                    <div>
+                        <div class="numbers">Feb</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="maret-none.html">
+                    <div>
+                        <div class="numbers">Mar</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="april-none.html">
+                    <div>
+                        <div class="numbers">Apr</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="mei.html">
+                    <div>
+                        <div class="numbers">Mei</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juni.html">
+                    <div>
+                        <div class="numbers">Jun</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juli.html">
+                    <div>
+                        <div class="numbers">Jul</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="agustus.html">
+                    <div>
+                        <div class="numbers">Ags</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="september.html">
+                    <div>
+                        <div class="numbers">Sep</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="oktober.html">
+                    <div>
+                        <div class="numbers">Okt</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="november.html">
+                    <div>
+                        <div class="numbers">Nov</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="desember.html">
+                    <div>
+                        <div class="numbers">Des</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <h1 class="tahun text-center" id="2024">2024</h1>
+            <div class="cardBox">
+                
+                <div class="card">
+                    <a href="januari-none.html">
+                    <div>
+                        <div class="numbers">Jan</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="februari-none.html">
+                    <div>
+                        <div class="numbers">Feb</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="maret-none.html">
+                    <div>
+                        <div class="numbers">Mar</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="april-none.html">
+                    <div>
+                        <div class="numbers">Apr</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="mei.html">
+                    <div>
+                        <div class="numbers">Mei</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juni.html">
+                    <div>
+                        <div class="numbers">Jun</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juli.html">
+                    <div>
+                        <div class="numbers">Jul</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="agustus.html">
+                    <div>
+                        <div class="numbers">Ags</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="september.html">
+                    <div>
+                        <div class="numbers">Sep</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="oktober.html">
+                    <div>
+                        <div class="numbers">Okt</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="november.html">
+                    <div>
+                        <div class="numbers">Nov</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="desember.html">
+                    <div>
+                        <div class="numbers">Des</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <h1 class="tahun text-center" id="2025">2025</h1>
+            <div class="cardBox">
+                
+                <div class="card">
+                    <a href="januari-none.html">
+                    <div>
+                        <div class="numbers">Jan</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="februari-none.html">
+                    <div>
+                        <div class="numbers">Feb</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="maret-none.html">
+                    <div>
+                        <div class="numbers">Mar</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="april-none.html">
+                    <div>
+                        <div class="numbers">Apr</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="mei.html">
+                    <div>
+                        <div class="numbers">Mei</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juni.html">
+                    <div>
+                        <div class="numbers">Jun</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="juli.html">
+                    <div>
+                        <div class="numbers">Jul</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="agustus.html">
+                    <div>
+                        <div class="numbers">Ags</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="september.html">
+                    <div>
+                        <div class="numbers">Sep</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="oktober.html">
+                    <div>
+                        <div class="numbers">Okt</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="november.html">
+                    <div>
+                        <div class="numbers">Nov</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="desember.html">
+                    <div>
+                        <div class="numbers">Des</div>
+                        <div class="cardName">Hadir bulan ini</div>
+                    </div>
+                    <div class="iconBox">-</div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="SCRIPT/april.js"></script>
+</body>
+
+</html>
